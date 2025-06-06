@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML with JS</title>
+</head>
+<body>
+      
+       <button id="myBtn">Click me</button>
+  <script>
+    function sayhi(){
+      alert("Helllooooooo guysssssssssssss")
+    }
+    let btn=document.getElementById("myBtn");
+    btn.addEventListener("click",sayhi);
+    setTimeout(()=>{
+      btn.removeEventListener("click",sayhi);
+    },5000);
+  </script>
+</body>
+</html>
